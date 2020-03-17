@@ -37,6 +37,6 @@ TODO: 整理了一些常用的工具方法
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit','Foundation'
+  s.frameworks = 'UIKit','Foundation','CoreGraphics','QuartzCore'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
