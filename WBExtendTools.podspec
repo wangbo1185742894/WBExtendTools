@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBExtendTools'
-  s.version          = '1.0.1'
+  s.version          = '1.0.3'
   s.summary          = '收集的一些常用的工具方法'
 
   s.description      = <<-DESC
