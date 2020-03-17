@@ -24,5 +24,10 @@
     "Foundation",
     "CoreGraphics",
     "QuartzCore"
-  ]
+  ],
+  "dependencies": {
+    "GTMBase64": [
+
+    ]
+  }
 }

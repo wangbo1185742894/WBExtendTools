@@ -137,7 +137,7 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
         }
     }
     @catch (NSException * e) {
-        [HUDIndicatorTools ShowToastText:@"解析色值异常"];
+        
     }
     
     return [UIColor colorWithRed:(float)(red/255.0f) green:(float)(green/255.0f) blue:(float)(blue/255.0f) alpha:(float)(1.0f)];

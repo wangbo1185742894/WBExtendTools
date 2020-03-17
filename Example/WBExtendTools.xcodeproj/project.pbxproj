@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D05A0221BC17EE9F327AAEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3D05A0221BC17EE9F327AAEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		51419A0F1C1BA48358210E2F /* Pods_WBExtendTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBExtendTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5376757923E4DD4D31C1C5B5 /* WBExtendTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WBExtendTools.podspec; path = ../WBExtendTools.podspec; sourceTree = "<group>"; };
+		5376757923E4DD4D31C1C5B5 /* WBExtendTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WBExtendTools.podspec; path = ../WBExtendTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* WBExtendTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBExtendTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,7 +59,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6C937840134A5981598D2E3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C937840134A5981598D2E3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A6A84BB10D350F06B79AC2 /* Pods-WBExtendTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBExtendTools_Example.release.xcconfig"; path = "Target Support Files/Pods-WBExtendTools_Example/Pods-WBExtendTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				D3ED9A0ABE708BEBE2EBCAB9 /* Pods-WBExtendTools_Tests.debug.xcconfig */,
 				BE3C10E65F9D1D3EDA4100AE /* Pods-WBExtendTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wangbo1185742894;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M7JT4ZMJ42;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WBExtendTools_Example/Pods-WBExtendTools_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework",
 				"${BUILT_PRODUCTS_DIR}/WBExtendTools/WBExtendTools.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMBase64.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WBExtendTools.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +518,7 @@
 			baseConfigurationReference = A17B8ED33AF9478776668947 /* Pods-WBExtendTools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M7JT4ZMJ42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WBExtendTools/WBExtendTools-Prefix.pch";
 				INFOPLIST_FILE = "WBExtendTools/WBExtendTools-Info.plist";
@@ -529,6 +535,7 @@
 			baseConfigurationReference = 74A6A84BB10D350F06B79AC2 /* Pods-WBExtendTools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M7JT4ZMJ42;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WBExtendTools/WBExtendTools-Prefix.pch";
 				INFOPLIST_FILE = "WBExtendTools/WBExtendTools-Info.plist";

@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - WBExtendTools (1.0.0)
+  - GTMBase64 (1.0.1)
+  - WBExtendTools (1.0.0):
+    - GTMBase64
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -13,6 +15,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - GTMBase64
 
 EXTERNAL SOURCES:
   WBExtendTools:
@@ -20,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  WBExtendTools: a3e87fc1e776e7a13efb2f331714c471f4b069cd
+  GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
+  WBExtendTools: b944ad1f97b33333665715a436ea825ea23efbe8
 
 PODFILE CHECKSUM: 526b40189464b26c0e3665d3be30208fbeb58f4c
 

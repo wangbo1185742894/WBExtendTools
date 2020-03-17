@@ -8,6 +8,8 @@
 
 #import "UIViewController+Addition.h"
 #import <objc/runtime.h>
+#import "UIColor+Custom.h"
+
 
 const char NavRightItemHandleKey;
 const char NavLeftItemHandleKey;

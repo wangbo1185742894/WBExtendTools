@@ -7,6 +7,8 @@
 //
 
 #import "UIView+Custom.h"
+#import "UIColor+Custom.h"
+#import "UIView+Frame.h"
 
 @implementation UIView (Custom)
 
