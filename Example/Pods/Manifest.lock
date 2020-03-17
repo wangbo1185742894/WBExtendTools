@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - WBExtendTools (0.1.0)
+  - WBExtendTools (1.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  WBExtendTools: 881c2929eb09c786a579b3f6d8c000e9df22e3b3
+  WBExtendTools: a3e87fc1e776e7a13efb2f331714c471f4b069cd
 
-PODFILE CHECKSUM: bbf35697427985703f07d0ee69b441c90e4d17c4
+PODFILE CHECKSUM: 526b40189464b26c0e3665d3be30208fbeb58f4c
 
 COCOAPODS: 1.8.4

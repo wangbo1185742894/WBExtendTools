@@ -1,8 +1,8 @@
 {
   "name": "WBExtendTools",
-  "version": "0.1.0",
-  "summary": "A short description of WBExtendTools.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "收集的一些常用的工具方法",
+  "description": "TODO: 整理了一些常用的工具方法",
   "homepage": "https://github.com/wangbo1185742894/WBExtendTools",
   "license": {
     "type": "MIT",
@@ -13,10 +13,16 @@
   },
   "source": {
     "git": "https://github.com/wangbo1185742894/WBExtendTools.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "WBExtendTools/Classes/**/*"
+  "source_files": "WBExtendTools/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreGraphics",
+    "QuartzCore"
+  ]
 }
