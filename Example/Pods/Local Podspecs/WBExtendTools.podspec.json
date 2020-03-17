@@ -1,0 +1,22 @@
+{
+  "name": "WBExtendTools",
+  "version": "0.1.0",
+  "summary": "A short description of WBExtendTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangbo1185742894/WBExtendTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangbo1185742894": "wangbo3919@163.com"
+  },
+  "source": {
+    "git": "https://github.com/wangbo1185742894/WBExtendTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WBExtendTools/Classes/**/*"
+}

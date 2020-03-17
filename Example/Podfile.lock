@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - WBExtendTools (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - WBExtendTools (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  WBExtendTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  WBExtendTools: 881c2929eb09c786a579b3f6d8c000e9df22e3b3
+
+PODFILE CHECKSUM: bbf35697427985703f07d0ee69b441c90e4d17c4
+
+COCOAPODS: 1.8.4

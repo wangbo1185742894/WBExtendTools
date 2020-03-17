@@ -1,0 +1,12 @@
+use_frameworks!
+install! 'cocoapods', :deterministic_uuids => false
+platform :ios, '8.0'
+
+target 'WBExtendTools_Example' do
+  
+  pod 'WBExtendTools', :path => '../'
+  target 'WBExtendTools_Tests' do
+    inherit! :search_paths
+    pod 'FBSnapshotTestCase'
+  end
+end
