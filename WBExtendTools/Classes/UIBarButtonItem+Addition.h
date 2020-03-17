@@ -19,7 +19,7 @@
 /**
  *  快速创建一个UIBarButtonItem对象 通过给定的图片
  */
-+ (instancetype)itemWithImagename:(NSString *)imagename hightImagename:(NSString *)hightImagename touchBlock:(void(^)())block;
++ (instancetype)itemWithImagename:(NSString *)imagename hightImagename:(NSString *)hightImagename touchBlock:(void(^)(void))block;
 
 
 /**
@@ -30,6 +30,6 @@
 /**
  *  快速创建一个UIBarButtonItem对象 通过给定的标题和tintColor
  */
-+ (instancetype)itemWithTitle:(NSString *)title tintColor:(UIColor *)tintColor touchBlock:(void(^)())block;
++ (instancetype)itemWithTitle:(NSString *)title tintColor:(UIColor *)tintColor touchBlock:(void(^)(void))block;
 
 @end

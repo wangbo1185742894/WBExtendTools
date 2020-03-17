@@ -9,7 +9,7 @@
 #import "UIButton+Addition.h"
 #import <objc/runtime.h>
 
-typedef void(^ActionBlock)();
+typedef void(^ActionBlock)(void);
 
 @implementation UIButton (Addition) 
 
@@ -45,7 +45,7 @@ static char buttonBlockKey;
 + (instancetype)buttonWithImagename:(NSString *)imagename
                      hightImagename:(NSString *)hightImagename
                         bgImagename:(NSString *)bgImagename
-                         touchBlock:(void (^)())block {
+                         touchBlock:(void (^)(void))block {
     
     
     UIButton *button = [self buttonWithImagename:imagename hightImagename:hightImagename bgImagename:bgImagename target:self action:@selector(btnTouch:)];
@@ -63,7 +63,7 @@ static char buttonBlockKey;
                     normalColor:(UIColor *)normalColor
                   selectedColor:(UIColor *)selectedColor
                        fontSize:(CGFloat)fontSize
-                     touchBlock:(void (^)())block {
+                     touchBlock:(void (^)(void))block {
     
     UIButton *button = [self buttonWithTitle:title
                                  normalColor:normalColor

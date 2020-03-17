@@ -240,8 +240,22 @@
     return urlStr;
 }
 
+-(NSString *)safeString{
+    if (self == nil || [self isEqualToString:@"(null)"] || [self isEqualToString:@"<null>"]) {
+        return @"";
+    }
+    return self;
+}
 
 
++ (CGSize)labelText:(NSString *)text fontSize:(float)size width:(CGFloat)width{
+    NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:14]};
+       NSStringDrawingOptions option = (NSStringDrawingOptions)(NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading);
+       
+       CGSize textSize = [text boundingRectWithSize:CGSizeMake(width, 0) options:option attributes:attribute context:nil].size;
+       
+       return textSize;
+}
 
 
 

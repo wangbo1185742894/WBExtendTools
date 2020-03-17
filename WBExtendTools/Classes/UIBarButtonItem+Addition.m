@@ -12,7 +12,7 @@
 static char btnBlockKey;
 static char itemBlockKey;
 
-typedef void(^ActionBlock)();
+typedef void(^ActionBlock)(void);
 
 @implementation UIBarButtonItem (Addition)
 
@@ -37,7 +37,7 @@ static char itemBlockKey;
 
 + (instancetype)itemWithImagename:(NSString *)imagename
                    hightImagename:(NSString *)hightImagename
-                       touchBlock:(void(^)())block {
+                       touchBlock:(void(^)(void))block {
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] init];
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -69,7 +69,7 @@ static char itemBlockKey;
 
 + (instancetype)itemWithTitle:(NSString *)title
                      tintColor:(UIColor *)tintColor
-                   touchBlock:(void (^)())block {
+                   touchBlock:(void (^)(void))block {
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title
                                                              style:UIBarButtonItemStylePlain
                                                             target:self

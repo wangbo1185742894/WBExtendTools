@@ -26,4 +26,19 @@
                 textAlignment:(NSTextAlignment)textAlignment {
     return [[UILabel alloc] initWithFont:font textColor:textColor textAlignment:textAlignment];
 }
+
+-(NSAttributedString *)setAttributedString:(NSString *)text andLineSpacing:(CGFloat)spacing{
+
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = spacing;  //设置行间距
+    paragraphStyle.lineBreakMode = self.lineBreakMode;
+    paragraphStyle.alignment = self.textAlignment;
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text];
+    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [text length])];
+    
+    self.attributedText = attributedString;
+    
+    return attributedString;
+}
 @end

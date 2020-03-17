@@ -18,4 +18,6 @@
                textColor:(UIColor *)textColor
            textAlignment:(NSTextAlignment)textAlignment;
 
+- (NSAttributedString *)setAttributedString:(NSString *)text andLineSpacing:(CGFloat)spacing;
+
 @end
