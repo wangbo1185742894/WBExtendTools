@@ -5,14 +5,35 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - GTMBase64 (1.0.1)
-  - WBExtendTools (1.0.0):
+  - MBProgressHUD (1.2.0)
+  - RMUniversalAlert (0.8.1):
+    - RMUniversalAlert/Core (= 0.8.1)
+  - RMUniversalAlert/Core (0.8.1):
+    - "UIActionSheet+Blocks (>= 0.9)"
+    - "UIAlertController+Blocks (>= 0.9)"
+    - "UIAlertView+Blocks (>= 0.9)"
+  - Toast (4.0.0)
+  - "UIActionSheet+Blocks (0.9)"
+  - "UIAlertController+Blocks (0.9.2)"
+  - "UIAlertView+Blocks (0.9)"
+  - WBExtendTools (1.0.3):
     - GTMBase64
+    - MBProgressHUD
+    - RMUniversalAlert
+    - Toast
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - WBExtendTools (from `../`)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MBProgressHUD
+    - RMUniversalAlert
+    - Toast
+    - "UIActionSheet+Blocks"
+    - "UIAlertController+Blocks"
+    - "UIAlertView+Blocks"
   trunk:
     - FBSnapshotTestCase
     - GTMBase64
@@ -24,8 +45,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
-  WBExtendTools: b944ad1f97b33333665715a436ea825ea23efbe8
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  RMUniversalAlert: ce7118101a19fa41b9adedf907b66a8cc3bd32c8
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  "UIActionSheet+Blocks": e180b7dad0a721ab7f212ac9742af799008bb358
+  "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
+  "UIAlertView+Blocks": a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  WBExtendTools: 8846f484af328e06aae0647c5f285fac8cef0845
 
-PODFILE CHECKSUM: 526b40189464b26c0e3665d3be30208fbeb58f4c
+PODFILE CHECKSUM: e88e679eb2326d10a52067bb4198be3fd314e6b8
 
 COCOAPODS: 1.8.4

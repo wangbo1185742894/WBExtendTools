@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBExtendTools'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = '收集的一些常用的工具方法'
 
   s.description      = <<-DESC
@@ -27,4 +27,7 @@ TODO: 整理了一些常用的工具方法
   
   s.frameworks = 'UIKit','Foundation','CoreGraphics','QuartzCore'
   s.dependency 'GTMBase64'
+  s.dependency 'Toast'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'RMUniversalAlert'
 end

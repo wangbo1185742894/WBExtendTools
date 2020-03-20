@@ -12,8 +12,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.count = 0;
+    self.marray = [NSMutableArray new];
+    
+    NSLog(@"%ld",[self test:5 and:0 and:[NSMutableArray array]]);
+    NSLog(@"%@",self.marray);
     return YES;
+}
+-(NSInteger)test:(NSInteger)n and:(NSInteger)count and:(NSMutableArray * )arr{
+    if (n != 0) {
+        count ++;
+        
+    }
+    if (n <= 1) {
+        if (n == 1) {
+            [arr addObject:@"1"];
+        }
+        [self.marray addObject:@(count)];
+        NSLog(@"%@",arr);
+        return 1;
+    }else{
+        
+        if ( n < 3) {
+            
+            [arr addObject:@"1"];
+            return [self test:n - 1 and:count and:arr];
+        }else if (n < 5){
+            NSMutableArray *mArray3 = [arr mutableCopy];
+            [arr addObject:@"1"];
+            [mArray3 addObject:@"3"];
+            return [self test:n - 1 and:count and:arr] + [self test:n - 3 and:count and:mArray3];
+        }else{
+            NSMutableArray *mArray3 = [arr mutableCopy];
+            NSMutableArray *mArray5 = [arr mutableCopy];
+            [arr addObject:@"1"];
+            [mArray3 addObject:@"3"];
+            [mArray5 addObject:@"5"];
+            return [self test:n - 1 and:count and:arr] + [self test:n - 3 and:count and:mArray3] + [self test:n - 5 and:count and:mArray5];
+        }
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -1,3 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 install! 'cocoapods', :deterministic_uuids => false
 platform :ios, '8.0'
