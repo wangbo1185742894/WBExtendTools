@@ -16,7 +16,7 @@ PODS:
   - "UIActionSheet+Blocks (0.9)"
   - "UIAlertController+Blocks (0.9.2)"
   - "UIAlertView+Blocks (0.9)"
-  - WBExtendTools (1.0.3):
+  - WBExtendTools (1.0.5):
     - GTMBase64
     - MBProgressHUD
     - RMUniversalAlert
@@ -51,7 +51,7 @@ SPEC CHECKSUMS:
   "UIActionSheet+Blocks": e180b7dad0a721ab7f212ac9742af799008bb358
   "UIAlertController+Blocks": 80e28b92523fb58aba4d1bccec013d5a0b0bddb2
   "UIAlertView+Blocks": a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
-  WBExtendTools: 8846f484af328e06aae0647c5f285fac8cef0845
+  WBExtendTools: ab4821c23b6b74a4e1de20edbb6b609c0c12feaf
 
 PODFILE CHECKSUM: e88e679eb2326d10a52067bb4198be3fd314e6b8
 
